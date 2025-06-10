@@ -7,6 +7,7 @@ const TopNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
+  
 
   return (
     <section className="hero_wrapper_section">
