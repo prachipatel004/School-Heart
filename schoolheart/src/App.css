@@ -1,38 +1,375 @@
-.App {
-  text-align: center;
+@media (min-width: 768px) {
+    .container {
+        max-width: 780px;
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (min-width: 1024px) {
+    .container {
+        max-width: 900px;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (min-width: 1120px) {
+    .container {
+        max-width: 1020px;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1254px;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1230px;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1430px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.container {
+    padding: 0 15px;
+    margin: auto;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-Thin.ttf),
+        url(./assets/fonts/Montserrat-Thin.woff),
+        url(./assets/fonts/Montserrat-Thin.woff2),
+        url(./assets/fonts/AnyConv.com__Montserrat-Thin.eot),
+        url(./assets/fonts/AnyConv.com__Montserrat-Thin.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-ExtraLight.ttf),
+        url(./assets/fonts/Montserrat-ExtraLight.eot),
+        url(./assets/fonts/Montserrat-ExtraLight.woff),
+        url(./assets/fonts/Montserrat-ExtraLight.woff2),
+        url(./assets/fonts/Montserrat-ExtraLight.eot);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-Light.eot),
+        url(./assets/fonts/Montserrat-Light.ttf),
+        url(./assets/fonts/Montserrat-Light.woff),
+        url(./assets/fonts/Montserrat-Light.woff2),
+        url(./assets/fonts/AnyConv.com__Montserrat-Light.otf);
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-Regular.ttf),
+        url(./assets/fonts/AnyConv.com__Montserrat-Regular.otf),
+        url(./assets/fonts/AnyConv.com__Montserrat-Regular.eot),
+        url(./assets/fonts/Montserrat-Regular.woff),
+        url(./assets/fonts/Montserrat-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-Medium.ttf),
+        url(./assets/fonts/Montserrat-Medium.woff),
+        url(./assets/fonts/Montserrat-Medium.woff2),
+        url(./assets/fonts/AnyConv.com__Montserrat-Medium.eot),
+        url(./assets/fonts/AnyConv.com__Montserrat-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-SemiBold.ttf),
+        url(./assets/fonts/Montserrat-SemiBold.woff),
+        url(./assets/fonts/Montserrat-SemiBold.woff2),
+        url(./assets/fonts/AnyConv.com__Montserrat-SemiBold.eot),
+        url(./assets/fonts/AnyConv.com__Montserrat-SemiBold.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-Bold.ttf),
+        url(./assets/fonts/Montserrat-Bold.woff),
+        url(./assets/fonts/Montserrat-Bold.woff2),
+        url(./assets/fonts/AnyConv.com__Montserrat-Bold.eot),
+        url(./assets/fonts/AnyConv.com__Montserrat-Bold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-ExtraBold.ttf),
+        url(./assets/fonts/Montserrat-ExtraBold.woff),
+        url(./assets/fonts/Montserrat-ExtraBold.woff2),
+        url(./assets/fonts/AnyConv.com__Montserrat-ExtraBold.eot),
+        url(./assets/fonts/AnyConv.com__Montserrat-ExtraBold.otf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-Black.eot),
+        url(./assets/fonts/Montserrat-Black.ttf),
+        url(./assets/fonts/Montserrat-Black.woff),
+        url(./assets/fonts/Montserrat-Black.woff2),
+        url(./assets/fonts/AnyConv.com__Montserrat-Black.otf);
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+/* nav section css */
+
+.nav_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 87px;
+    position: relative;
+}
+
+.nav_content {
+    display: flex;
+    align-items: center;
+    gap: 240px;
+}
+
+.nav_logo h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.nav_list ul {
+    list-style: none;
+    display: flex;
+    gap: 21px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_list ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.nav_list ul li a:hover {
+    color: #ff6551;
+}
+
+.nav_btn {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.custom-button {
+    background-color: #ff6551;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #ffffff;
+    color: #ff6551;
+}
+
+.topnav_section {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
+.hero_wrapper_section {
+    background-image: url('../src/assets/Images/navbgimage.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 225px;
+}
+
+
+h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFC652;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    margin: 0;
+    padding: 40px 0px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.nav_home {
+    max-width: 699px;
+    width: 100%;
+    margin: auto;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.menu_icon {
+    display: none;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    right: 4%;
+}
+@media (max-width: 968px){
+    .nav_content{
+        gap: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .nav_main {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav_content {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        top: 60px;
+        right: -20px;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 1000;
+        padding: 20px;
+        gap: 20px;
+        border-radius: 5px;
+    }
+
+    .nav_content.open {
+        transform: translateX(0);
+        display: flex;
+    }
+
+    .nav_list ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav_list ul li a {
+        font-size: 16px;
+        padding: 10px 0;
+        color: #ff6551;
+    }
+
+    .nav_btn {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    .nav_home {
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    .nav_home h1 {
+        font-size: 34px;
+        line-height: 44px;
+        padding: 20px 0px;
+    }
+
+    .nav_home h4 {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+
+    .custom-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .hero_wrapper_section {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav_home h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .nav_home h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .custom-button {
+        padding: 10px 20px;
+    }
+
+    .nav_logo h3 {
+        font-size: 20px;
+    }
 }
