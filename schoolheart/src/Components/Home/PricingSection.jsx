@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Row, Col, Button } from "antd";
+import { Card,Button } from "antd";
 import hearticon from '../../assets/Images/hearticon.svg'
 import checkIcon from '../../assets/Images/greencircle.svg'
 import closeIcon from '../../assets/Images/graycircle.svg'
@@ -23,8 +23,8 @@ const PricingCard = ({ isNew }) => (
             <div className="free-text">FREE</div>
 
             <div className="price">
-              <h2>19$</h2>
-             <h6>Per Month</h6>
+                <h2>19$</h2>
+                <h6>Per Month</h6>
             </div>
 
             <div className="description">
@@ -63,18 +63,18 @@ const PricingSection = () => {
                         of Classical physics: Newtonian mechanics.
                     </p>
                 </div>
+                <div className="pricing-row">
+                    <div className="pricing-col">
+                        <PricingCard />
+                    </div>
+                    <div className="pricing-col">
+                        <PricingCard />
+                    </div>
+                    <div className="pricing-col">
+                        <PricingCard />
+                    </div>
+                </div>
 
-                <Row gutter={[16, 16]} justify="center">
-                    <Col xs={24} sm={24} md={8}>
-                        <PricingCard />
-                    </Col>
-                    <Col xs={24} sm={24} md={8}>
-                        <PricingCard isNew />
-                    </Col>
-                    <Col xs={24} sm={24} md={8}>
-                        <PricingCard />
-                    </Col>
-                </Row>
             </div>
         </section>
     );

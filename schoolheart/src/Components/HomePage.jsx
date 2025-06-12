@@ -4,6 +4,9 @@ import Functionality from './Home/FunctinalitySection'
 import Section from './Home/Section'
 import CourseSection from './Home/CourseSection'
 import PricingSection from './Home/PricingSection'
+import TestimonialSection from './Home/TestimonialSection'
+import FormSection from './Home/FormSection'
+import Footer from './Home/FooterSection'
 
 const HomePage = () => {
   return (
@@ -13,6 +16,9 @@ const HomePage = () => {
     <Section/>
     <CourseSection/>
     <PricingSection/>
+    <TestimonialSection/>
+    <FormSection/>
+    <Footer/>
     </>
   )
 }
